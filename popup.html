@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>DevEx Rating</title>
+    <style>
+      /* Star container styling */
+      .stars {
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      /* Styling for each star */
+      .stars span {
+        color: white;
+        text-shadow: 0 0 2px black; /* Black outline */
+        transition: color 0.3s; /* Smooth color transition */
+      }
+
+      /* Class to make stars yellow when selected */
+      .stars span.selected {
+        color: gold; /* Yellow color */
+        text-shadow: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Rate this website:</h2>
+    <div class="stars">
+      <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+    </div>
+    <textarea id="reason" placeholder="Why did you give this rating?"></textarea>
+    <button id="submit">Submit</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

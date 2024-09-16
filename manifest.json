@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "DevEx Rating Extension",
+    "version": "1.0",
+    "descripption": "A simple extension to rate the Developer Experience of a website.",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "host_permissions": [
+        "https://nodejs-production-c051.up.railway.app/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
+  
